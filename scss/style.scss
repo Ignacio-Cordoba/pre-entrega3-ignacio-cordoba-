@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+$color-texto:rgb(207, 124, 0);
+
+
+@mixin texto{
+    font-family: 'Bruno Ace SC', cursive;
+    color: $color-texto;
+}
+
+
+body{
+    background: url(../assets/fondo.png);
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+header{
+    background-color: rgb(78, 78, 78);
+    border: solid black;
+    
+
+    a{
+    @include texto();
+    margin-right: 20px;
+    
+    }
+
+    h1{
+        font-family: 'Bruno Ace SC', cursive;
+    padding: 1px 2px 3px 4px;
+    color: orange;
+    }
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    
+    img{
+        display: flex;
+    justify-content: center;
+    }
+}
+
+.indextext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 28px;
+    @include texto();
+}
+
+.volver{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    flex-grow: 1;
+    /* width: 80%; */
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.containercaja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logofooter {
+    display: flex;
+    gap: 20px;
+
+    
+}
+
+.volver2 {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        font-family: 'Bruno Ace SC', cursive;
+    }
+}
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(78, 78, 78);
+    border: solid black;
+
+        a{
+            @include texto()
+        }
+    }
+
+    .opcionescatalogo{
+        display: flex;
+        gap: 300px;
+        flex-direction: column;
+        overflow: hidden;
+        a{
+        height: 50px;
+        width: 50px;
+        
+        }
+
+        img{
+            height: 300px;
+            width: 400px;
+            background-color: rgba(128, 128, 128, 0.438);
+            border: black solid;
+        }
+
+        h2{
+            @include texto()
+        }
+    }
+
+    ///////////////Giveaway///////////////
+    
+    .texto-giveaway {
+        display: flex;
+        height: fit-content;
+        width: 40%;
+        margin-left: 5%;
+        font-family: 'Bruno Ace SC', cursive;
+        padding: 1px 2px 3px 4px;
+        color: orange;
+    }
+
+    .bloque-give-2 {
+        flex-direction: row;
+        display: flex;
+        justify-content: end;
+    
+        div{
+            display: flex;
+    flex-direction: row;
+    background-color: #5a5555;
+    height: 30%;
+    width: 45%;
+    gap: 20px;
+    border: black solid;
+        }
+    }
+
+.separador-entrada-giveaway {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-left: 5%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.caja-giveaway-entrar {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    gap: 30px;
+}
+
+.giveaway-caja {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    background-color: gray;
+    border: solid black;
+    }
+
+.conjunto-giveaway-abajo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.texto-giveaway {
+    display: flex;
+    height: fit-content;
+    width: 40%;
+    margin-left: 5%;
+    font-family: 'Bruno Ace SC', cursive;
+    padding: 1px 2px 3px 4px;
+    color: orange;
+}
+
+.imagencatalogo {
+    height: 300px;
+    width: 400px;
+    background-color: rgba(128, 128, 128, 0.438);
+    border: black solid;
+}
+
+.ticketscaja {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(80, 80, 80);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+}
+
+.bloquegive {
+    display: flex;
+    flex-direction: row;
+    background-color: #5a5555;
+    height: 30%;
+    width: 45%;
+    gap: 20px;
+    border: black solid;
+    justify-content: space-between;
+}
+
+.boton-trade-giveaway {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+  }
+  
+  .boton-trade-giveaway:hover {
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: var(--clr);
+    color: var(--clr);
+    /* box-shadow: 0 0 35px var(--clr); */
+    animation: box 3s infinite;
+  }
+  
+  .boton-trade-giveaway::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #272822;
+  }
+  
+  .boton-trade-giveaway span {
+    position: relative;
+    z-index: 1;
+  }
+  .boton-trade-giveaway i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  
+  .boton-trade-giveaway i::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+  }
+  
+  .boton-trade-giveaway:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+  }
+  
+  .boton-trade-giveaway i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+  }
+  
+  .boton-trade-giveaway:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes box {
+    0% {
+      box-shadow: #27272c;
+    }
+    50% {
+      box-shadow: 0 0 25px var(--clr);
+    }
+    100% {
+      box-shadow: #27272c;
+    }
+  }
+
+
+/////////login/////////////
+
+.formulario-login-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+    section{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+        background-color: #5a5555;
+        border: black solid;
+        height: fit-content;
+        width: 30%;
+        @include texto()
+    }
+
+    h5{
+        grid-row: 3/5;
+    grid-column: 2/4;
+    border: black solid;
+    height: 40%;
+    width: 95%;
+    background-color: rgb(37, 37, 37);
+    }
+}
+
+.usuario-login {
+    grid-row: 6/7;
+    grid-column: 2/4;
+    border: black solid;
+
+}
+
+.password-login {
+    grid-row: 8/9;
+    grid-column: 2/4;
+    border: black solid;
+}
+
+.ingresar-login {
+    grid-row: 10/11;
+    grid-column: 2/4;
+    height: fit-content;
+    width: fit-content;
+}
+
+.contraseña-login {
+    grid-row: 12/12;
+    grid-column: 2/4;
+    height: fit-content;
+    width: fit-content;
+}
+
+///////////////armas///////////
+
+.cajas-venta{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+
+    a{
+        background-color: rgba(128, 128, 128, 0.438);
+    border: black solid;
+    }
+}
+
+
+////////////////////trade///////////////////
+
+.trade-inventario{
+    justify-content: center;
+    display: flex;
+    margin-top: 10%;
+}
+
+.conjunto-trade-items{
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        align-items: center;
+    }
+
+    h2{
+        @include texto()
+    }
+}
+
+
+.boton-trade {
+    box-shadow: inset 0px 1px 0px 0px #6ccf71;
+    background: linear-gradient(to bottom, #1bd02a 5%, #15bc1d 100%);
+    background-color: #1bd042;
+    border-radius: 3px;
+    border: 1px solid #119422;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #298531;
+}
+
+.boton-trade:hover {
+    background: linear-gradient(to bottom, #15bc55 5%, #1bd057 100%);
+    background-color: #15bc2b;
+}
+
+.boton-trade:active {
+    position: relative;
+    top: 1px;
+}
+
+@media (max-width:320px) {
+    header {
+        background-color: rgb(78, 78, 78);
+        border: solid black;
+        width: 200%;
+    }
+
+    body {
+        background: url(../assets/fondo.png);
+        background-attachment: fixed;
+        background-size: auto;
+        
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .logo2 {
+        height: 120%;
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .indextext {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 8px;
+
+    }
+
+
+
+
+    .containercaja {
+        margin-right: 30%;
+        justify-content: space-around;
+    }
+
+    .logo-footer-tamaño {
+        height: 20px;
+        width: 10px;
+    }
+
+    .acatalogue,
+    .atrade,
+    .agive,
+    .alogin {
+        font-size: 8px;
+    }
+
+    .logo-volver-tamaño {
+        height: 50px;
+        width: 70px;
+    }
+    
+    nav{
+        font-size: 8px;
+      }
+    
+    .caja-borde{
+      height: 80px;
+      width: 100px;
+    
+      }
+
+      .cajas-venta{
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        width: fit-content;
+      }
+      .logofooter{
+        img{
+            height: 10px;
+            width: 20px;
+        }
+      }
+
+      .volver2{
+        img{
+            height: 70px;
+            width: 50px;
+        }
+        h4{
+            font-size: 8px;
+        }
+      }
+
+      .ak-footer{
+        height: 70px;
+        width: 50px;
+      }
+
+      .catalogo-borde-ancla{
+        height: fit-content;
+        width: fit-content;
+        img{
+            height: 306px;
+            width: 310px;
+        }
+    
+      }
+      .opcionescatalogo{
+        
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        gap: 2px;
+      }
+      
+      
+}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width:768px) {
+    header {
+        background-color: rgb(78, 78, 78);
+        border: solid black;
+        width: 100%;
+    }
+
+    body {
+        background: url(../assets/fondo.png);
+        background-attachment: fixed;
+        background-size: auto;
+
+    }
+
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .logo2 {
+        height: 120%;
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .indextext {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+
+
+
+    .containercaja {
+        margin-right: 30%;
+        justify-content: space-around;
+    }
+
+    .logo-footer-tamaño {
+        height: 20px;
+        width: 10px;
+    }
+
+    .acatalogue,
+    .atrade,
+    .agive {
+        font-size: 8px;
+    }
+
+    .logo-volver-tamaño {
+        height: 50px;
+        width: 70px;
+    }
+    nav{
+        font-size: 8px;
+      }
+    
+    .caja-borde{
+      height: 80px;
+      width: 100px;
+    
+      }
+
+      .cajas-venta{
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        width: fit-content;
+      }
+      .logofooter{
+        img{
+            height: 10px;
+            width: 20px;
+        }
+      }
+
+      .volver2{
+        img{
+            height: 70px;
+            width: 50px;
+        }
+        h4{
+            font-size: 8px;
+        }
+      }
+
+      .ak-footer{
+        height: 70px;
+        width: 50px;
+      }
+      
+    
+}

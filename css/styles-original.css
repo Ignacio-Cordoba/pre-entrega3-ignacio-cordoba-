@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+body {
+    background: url(../assets/fondo.png);
+    background-attachment: fixed;
+    background-size: auto;
+
+}
+
+header {
+    background-color: rgb(78, 78, 78);
+    border: solid black;
+}
+
+.f {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(80, 80, 80);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+}
+
+
+h1 {
+    font-family: 'Bruno Ace SC', cursive;
+    padding: 1px 2px 3px 4px;
+    color: orange;
+}
+
+h2 {
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+h4 {
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.acatalogue , .alogin {
+    font-family: 'Bruno Ace SC', cursive;
+    color: rgb(207, 124, 0);
+}
+
+.atrade {
+    font-family: 'Bruno Ace SC', cursive;
+    color: rgb(207, 124, 0);
+}
+
+.agive {
+    font-family: 'Bruno Ace SC', cursive;
+    color: rgb(207, 124, 0);
+}
+
+.volver {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    flex-grow: 1;
+    /* width: 80%; */
+
+    justify-content: space-between;
+    margin-top: 200px;
+
+}
+
+.volver2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.indextext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.bloquegive {
+    display: flex;
+    flex-direction: row;
+    background-color: #5a5555;
+    height: 30%;
+    width: 45%;
+    gap: 20px;
+    border: black solid;
+}
+
+.bloque-give-2 {
+    flex-direction: row;
+    display: flex;
+    justify-content: end;
+
+}
+
+.tickets-bloque-give {
+    display: flex;
+}
+
+.brimstone {
+    height: fit-content;
+    width: fit-content;
+}
+
+h6 {
+    padding-right: 10%;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+}
+
+.logofooter {
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.containercaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.containercaja2 {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.mover {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.catalogo-borde-ancla {
+    height: 50px;
+    width: 50px;
+
+}
+
+.imagencatalogo {
+    height: 300px;
+    width: 400px;
+    background-color: rgba(128, 128, 128, 0.438);
+    border: black solid;
+}
+
+.opcionescatalogo {
+    display: flex;
+    gap: 300px;
+}
+
+.cajas-venta {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.caja-borde {
+    background-color: rgba(128, 128, 128, 0.438);
+    border: black solid;
+}
+
+.caja-trade-your-items {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+}
+
+.conjunto-trade-their-items {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+}
+
+.conjunto-trade-items {
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+}
+
+.trade-inventario {
+    justify-content: center;
+    display: flex;
+    margin-top: 10%;
+}
+
+.boton-trade {
+    box-shadow: inset 0px 1px 0px 0px #6ccf71;
+    background: linear-gradient(to bottom, #1bd02a 5%, #15bc1d 100%);
+    background-color: #1bd042;
+    border-radius: 3px;
+    border: 1px solid #119422;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #298531;
+}
+
+.boton-trade:hover {
+    background: linear-gradient(to bottom, #15bc55 5%, #1bd057 100%);
+    background-color: #15bc2b;
+}
+
+.boton-trade:active {
+    position: relative;
+    top: 1px;
+}
+
+.giveaway-caja {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    background-color: gray;
+    border: solid black;
+}
+
+
+.boton-trade-giveaway {
+    box-shadow: inset 0px 1px 0px 0px #c46800;
+    background: linear-gradient(to bottom, #c46800 5%, #c46800 100%);
+    background-color: #c46800;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #c46800;
+}
+
+.boton-trade-giveaway:hover {
+    background: linear-gradient(to bottom, #c46800 5%, #c46800 100%);
+    background-color: #c46800;
+}
+
+.boton-trade-giveaway:active {
+    position: relative;
+    top: 1px;
+}
+
+.conjunto-giveaway-abajo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.caja-giveaway-entrar {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    gap: 30px;
+}
+
+.separador-entrada-giveaway {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-left: 5%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.texto-giveaway {
+    display: flex;
+    height: fit-content;
+    width: 40%;
+    margin-left: 5%;
+    font-family: 'Bruno Ace SC', cursive;
+    padding: 1px 2px 3px 4px;
+    color: orange;
+}
+
+/* [9:26, 24/5/2023] Ignacio Cordoba: 744x1133
+[9:26, 24/5/2023] Ignacio Cordoba: 320x588 */
+
+.formulario-login {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    background-color: #5a5555;
+    border: black solid;
+    height: fit-content;
+    width: 30%;
+    font-family: 'Bruno Ace SC', cursive;
+    color: rgb(207, 124, 0);
+
+
+
+}
+
+.formulario-login-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.titulo-login {
+    grid-row: 3/5;
+    grid-column: 2/4;
+    border: black solid;
+    height: 40%;
+    width: 95%;
+    background-color: rgb(37, 37, 37);
+}
+
+.usuario-login {
+    grid-row: 6/7;
+    grid-column: 2/4;
+    border: black solid;
+
+}
+
+.password-login {
+    grid-row: 8/9;
+    grid-column: 2/4;
+    border: black solid;
+}
+
+.ingresar-login {
+    grid-row: 10/11;
+    grid-column: 2/4;
+    height: fit-content;
+    width: fit-content;
+}
+
+.contraseña-login {
+    grid-row: 12/12;
+    grid-column: 2/4;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+
+
+
+
+@media (max-width:320px) {
+    header {
+        background-color: rgb(78, 78, 78);
+        border: solid black;
+        width: 100%;
+    }
+
+    body {
+        background: url(../assets/fondo.png);
+        background-attachment: fixed;
+        background-size: auto;
+        
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .logo2 {
+        height: 120%;
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .indextext {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 8px;
+
+    }
+
+
+
+
+    .containercaja {
+        margin-right: 30%;
+        justify-content: space-around;
+    }
+
+    .logo-footer-tamaño {
+        height: 20px;
+        width: 10px;
+    }
+
+    .acatalogue,
+    .atrade,
+    .agive,
+    .alogin {
+        font-size: 8px;
+    }
+
+    .logo-volver-tamaño {
+        height: 50px;
+        width: 70px;
+    }
+}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width:744px) {
+    header {
+        background-color: rgb(78, 78, 78);
+        border: solid black;
+        width: 100%;
+    }
+
+    body {
+        background: url(../assets/fondo.png);
+        background-attachment: fixed;
+        background-size: auto;
+
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .logo2 {
+        height: 120%;
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .indextext {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+
+
+
+    .containercaja {
+        margin-right: 30%;
+        justify-content: space-around;
+    }
+
+    .logo-footer-tamaño {
+        height: 20px;
+        width: 10px;
+    }
+
+    .acatalogue,
+    .atrade,
+    .agive {
+        font-size: 8px;
+    }
+
+    .logo-volver-tamaño {
+        height: 50px;
+        width: 70px;
+    }
+}
