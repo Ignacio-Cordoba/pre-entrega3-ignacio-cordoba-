@@ -84,9 +84,10 @@ nav a {
 
 .opcionescatalogo {
   display: flex;
-  gap: 300px;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   overflow: hidden;
+  justify-content: space-around;
 }
 .opcionescatalogo a {
   height: 50px;
@@ -368,6 +369,7 @@ nav a {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 10%;
+  justify-content: center;
 }
 .cajas-venta a {
   background-color: rgba(128, 128, 128, 0.438);
