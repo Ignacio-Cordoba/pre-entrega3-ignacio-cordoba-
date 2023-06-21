@@ -99,9 +99,10 @@ header{
 
     .opcionescatalogo{
         display: flex;
-        gap: 300px;
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
         overflow: hidden;
+        justify-content: space-around;
         a{
         height: 50px;
         width: 50px;
@@ -382,7 +383,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10%;
-
+    justify-content: center;
     a{
         background-color: rgba(128, 128, 128, 0.438);
     border: black solid;
